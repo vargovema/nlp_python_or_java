@@ -1,5 +1,10 @@
+#%%
+
 #libraries for the data processing pipeline
 import string
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 import nltk
 from nltk.stem import WordNetLemmatizer 
 from nltk.corpus import wordnet
@@ -9,15 +14,17 @@ nltk.download('wordnet')
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
+nltk.download('omw-1.4')
 
 #libraries for training the model
+from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import plot_roc_curve
 from sklearn.metrics import confusion_matrix
-import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
+
 
 lemmatizer = WordNetLemmatizer()
 ps = PorterStemmer() 
@@ -101,4 +108,4 @@ for x in top_negative_coefficients.index:
     print(vectorizer.get_feature_names()[x])
    
 
-
+# %%

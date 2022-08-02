@@ -1,4 +1,6 @@
-string
-nltk
-sklearn
-matplotlib
+numpy==1.23.1
+pandas==1.4.3
+nltk==3.7
+sklearn==0.0
+matplotlib==3.5.2
+scikit-learn==1.1.1
