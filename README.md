@@ -58,7 +58,9 @@ The model performs much better than the baseline accuracy of 50% with an accurac
 
 ![](figs/auc.png)
 
-## Top 10 suggestive features of Python and Java
+## Top suggestive features of Python and Java
+
+The table below shows the ten highest ranking words used in Stack Overflow posts that are suggestive of either Python or Java.
 
 Ranking | Python | Java
 --- | --- | --- 
